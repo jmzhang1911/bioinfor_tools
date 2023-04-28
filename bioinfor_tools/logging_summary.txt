@@ -1,0 +1,17 @@
+datetime:2023-04-28 09:45:35	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 09:49:37	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 09:51:41	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 09:52:55	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:04:36	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:05:37	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:18:51	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:22:14	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:32:22	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:32:46	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:36:21	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:39:08	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:39:22	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:39:52	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:41:41	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:41:46	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done
+datetime:2023-04-28 10:42:09	pwd:/Users/jmzhang/workspace/mygithub/bioinfor_tools	script_id:test.py	status:done

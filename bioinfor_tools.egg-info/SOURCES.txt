@@ -1,0 +1,9 @@
+setup.py
+bioinfor_tools/__init__.py
+bioinfor_tools/_bio_basic.py
+bioinfor_tools/_cmd_runner.py
+bioinfor_tools/_utils.py
+bioinfor_tools.egg-info/PKG-INFO
+bioinfor_tools.egg-info/SOURCES.txt
+bioinfor_tools.egg-info/dependency_links.txt
+bioinfor_tools.egg-info/top_level.txt
