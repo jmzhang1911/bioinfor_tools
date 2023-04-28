@@ -1,6 +1,7 @@
 # bioinfor_tools
 ![Stars](https://img.shields.io/pypi/v/bioinfor-tools.svg)
-
+## Introduction
+bioinfor_tools: A simple tool for setting up bioinformatics pipelines. It is mainly used to quickly call shell commands within python scripts, and provides features such as thread number and qsub.
 ## Install
 ```angular2html
 pip install bioinfor-tools
