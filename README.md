@@ -1,4 +1,6 @@
 # bioinfor_tools
+
+![Stars](https://static.pepy.tech/personalized-badge/bioinfor-tools?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)
 ![Stars](https://img.shields.io/pypi/v/bioinfor-tools.svg)
 ## Introduction
 bioinfor_tools: A simple tool for setting up bioinformatics pipelines. It is mainly used to quickly call shell commands within python scripts, and provides features such as thread number and qsub.
