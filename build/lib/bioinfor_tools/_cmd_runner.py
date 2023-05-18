@@ -1,4 +1,4 @@
-from concurrent.futures import ThreadPoolExecutor, wait, FIRST_EXCEPTION
+from concurrent.futures import ThreadPoolExecutor, wait, FIRST_EXCEPTION, as_completed
 import bioinfor_tools._utils as _utils
 from ._bio_basic import BioBasic
 from threading import Event
@@ -175,32 +175,35 @@ class CmdRunner(BioBasic):
             event = Event()
             run_shell = functools.partial(cls._run_shell, use_qsub=use_qsub, event=event)
 
-            # task_list = []
-            # for cmd in cmd_list:
-            #     task = executor_cmd.submit(run_shell, cmd)
-            #     task_list.append(task)
-            futures = [executor_cmd.submit(run_shell, cmd) for cmd in cmd_list]
+            task_list = []
+            for cmd in cmd_list:
+                task = executor_cmd.submit(run_shell, cmd)
+                task_list.append(task)
 
-            if len(futures) >=1:
+            for future in as_completed(task_list):
+                future.result()
 
-                done, not_done = wait(futures, return_when=FIRST_EXCEPTION)
-                if len(done) == 1 or len(done) != len(futures):
-                    future = list(done)[0]
-                    logging.info(future.exception())
-                    error_info = f'One task failed with: {future.exception()}, shutting down'
-                    for future in futures:
-                        future.cancel()
 
-                    event.set()
-                    raise Exception(error_info)
+            #futures = [executor_cmd.submit(run_shell, cmd) for cmd in cmd_list]
+
+            # if len(futures) >=1:
+            #
+            #     done, not_done = wait(futures, return_when=FIRST_EXCEPTION)
+            #     if len(done) == 1 or len(done) != len(futures):
+            #         future = list(done)[0]
+            #         logging.info(future.exception())
+            #         error_info = f'One task failed with: {future.exception()}, shutting down'
+            #         for future in futures:
+            #             future.cancel()
+            #
+            #         event.set()
+            #         raise Exception(error_info)
 
             # while True:
             #     logging.info(cls.ERROR_LIST)
             #     if len(cls.ERROR_LIST) >= 1:
             #         executor_cmd.shutdown(wait=False)
 
-            # for future in as_completed(task_list):
-            #     future.result()
 
             # try:
             #     wait(task_list)

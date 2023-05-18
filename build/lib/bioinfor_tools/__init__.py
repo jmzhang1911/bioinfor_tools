@@ -9,7 +9,7 @@ import logging
 FORMAT = '%(asctime)s %(message)s'
 logging.basicConfig(level=logging.INFO, format=FORMAT, datefmt='%Y-%m-%d %H:%M:%S')
 
-__version__ = 'v0.2 beta'
+__version__ = 'v0.1.1 beta'
 
 from ._bio_basic import BioBasic
 from ._cmd_runner import CmdRunner as __CmdRunner
