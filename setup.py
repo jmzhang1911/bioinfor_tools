@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='bioinfor_tools',
-    version='v0.1',
+    version='v0.2',
     packages=['bioinfor_tools'],
     url='',
     license='',
